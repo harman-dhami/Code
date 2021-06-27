@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Path of Light Yoga Studio :: Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width-device, initial-scale=1.0">
+  <link rel="stylesheet" href="yoga.css">
+  <meta name="description" content="Path of Light Yoga Studio, provides excellent yoga practice for all levels of experience.">
+  <script type ="text/JavaScript">
+
+	  function calculateNamaste()
+	  {
+	  document.yShop.costNamaste.value = document.yShop.namaste.value * 49.99;
+	  }
+	 function calculateLotus()
+	  {
+	   document.yShop.costLotus.value = document.yShop.lotus.value * 39.99;	
+	  } 
+	  function totalCost()
+	{
+		document.yShop.total.value=document.yShop.namaste.value * 49.99 +
+		document.yShop.lotus.value * 39.99;
+	}
+	</script> 
+</head>
+<body>
+  <div id="wrapper">
+  <header>
+    <h1>Path of Light Yoga Studio</h1>
+  </header>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="schedule.html">Schedule</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="survey.html">Survey</a></li>
+    <li><a href="store.html">Store</a></li>
+  </nav>
+  <main>
+   <div id="hero">
+    <img src="store.jpg" alt="Store Image" height="325" width="900">
+    </div>
+    
+    <h2>Yoga Store</h2>
+    <p>Continue your practice at home with a Yoga Set from Path of Light Yoga Studio.</p>
+    
+    <section>
+      <h3>Namaste Yoga Set</h3>
+      <p>The Namaste Yoga Set includes a sustainable yoga mat, a 100% cotton yoga blanket,<br>
+         and two eco-friendly yoga blocks. $49.99</p>
+      <form method="post" action="http://webdevbasics.net/cart.html">
+        <input type="submit" value="Place in Cart">
+      </form>
+    </section>
+    <section>
+      <h3>Lotus Yoga Set</h3>
+      <p>The Lotus Yoga Set includes a sustainable yoga mat and a 100% cotton yoga blanket.<br>
+         $39.99</p>
+      <form method="post" action="http://webdevbasics.net/cart.html">
+        <input type="submit" value="Place in Cart">
+      </form>
+    </section>
+    <form name="yShop">
+	<table>
+	<tr>
+	 <th>Description</th>
+	 <th>Price</th>
+	 <th>Quantity</th>
+	<th>Cost</th>
+	</tr>
+
+	<tr>
+	 <td>Namaste Yoga Set</td>
+	 <td>$49.99</td>
+	 <td><input type="text" id="namaste" name="namaste" size="6" onChange="calculateNamaste()"></td>
+	 <td><input type = "text" size = "6" id ="costNamaste" name="costNamaste" ></td>
+	</tr>
+	
+	<tr>
+	 <td>Lotus Yoga Set</td>
+	 <td>$39.99</td>
+	 <td><input type="text" id="lotus" name="lotus" size="6" onChange="calculateLotus()"></td>
+	 <td><input type = "text" size = "6" id ="costLotus" name="costLotus" ></td>
+	 
+	 <tr>
+	 <td colspan="5" align="center">
+	 <label>Total Cost: 
+	 <input type="text" size="6" id="total" name="total" readOnly="true"></label><br><br>
+	 </td>
+	</tr>
+	
+	<tr>
+	 <td colspan="5" align="center">
+	 <label>Calculate Total:
+	 <input type="button" onclick="totalCost()" id="btntotal" name="btntotal" value="View Total" ></label>
+	 </td>
+	</tr>
+	</table>
+	</form>
+  </main>
+  <footer>
+    <small><i>Copyright &copy; 2018 Path of Light Yoga Studio<br>
+              harman.dhami@email.kpu.ca</i></small>
+  </footer>
+  </div>
+</body>
+</html>

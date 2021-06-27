@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Path of Light Yoga Studio :: Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width-device, initial-scale=1.0">
+  <link rel="stylesheet" href="yoga.css">
+  <meta name="description" content="Path of Light Yoga Studio, provides excellent yoga practice for all levels of experience.">
+</head>
+<body>
+  <div id="wrapper">
+  <header>
+    <h1>Path of Light Yoga Studio</h1>
+  </header>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="schedule.html">Schedule</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="survey.html">Survey</a></li>
+    <li><a href="store.html">Store</a></li>
+  </nav>
+  <main>
+    <form method="post" action="http://webdevbasics.net/scripts/yoga.php">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">E-Mail: </label>
+    <input type="text" name="email" id="email">
+    <fieldset><legend>Select Your Favorite Yoga Classes:</legend>
+    <label><input type="checkbox" name="ghYoga" id="ghYoga" value="Yes"> Gentle Hatha Yoga</label>
+    <label><input type="checkbox" name="vYoga" id="vYoga" value="Yes"> Vinyasa Yoga</label>
+    <label><input type="checkbox" name="rYoga" id="rYoga" value="Yes"> Restorative Yoga</label>
+    </fieldset>
+    <fieldset><legend>Select how often you attend yoga class per week:</legend>
+    <label><input type="radio" value="Weekly"
+    name="Frequency" id="AttendWeek">Once </label>
+    <label><input type="radio" name="Frequency" value="2-3"
+    id="2-3 times"> 2-3 Times</label>
+    <label><input type="radio" name="Frequency" value="4-5"
+    id="4-5 times"> 4-5 Times</label>
+    <label><input type="radio" name="Frequency" value="6-7"
+    id="6-7 times"> 6-7 Times</label>
+    </fieldset>
+    <label for="role">How important is yoga in your life?</label><br>
+    <textarea rows="3" name="role" id="role" cols="60"></textarea>
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+  </main>
+  <footer>
+    <small><i>Copyright &copy; 2018 Path of Light Yoga Studio<br>
+              harman.dhami@email.kpu.ca</i></small>
+  </footer>
+  </div>
+</body>
+</html>

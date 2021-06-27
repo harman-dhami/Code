@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Path of Light Yoga Studio :: Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width-device, initial-scale=1.0">
+  <link rel="stylesheet" href="yoga.css">
+  <meta name="description" content="Path of Light Yoga Studio, provides excellent yoga practice for all levels of experience.">
+  <script>
+  function validateForm() {
+  if (document.forms[0].myEmail.value == "" ) {
+      alert ("Please enter an e-mail address.");
+      return false;
+  } // end if;
+  return true;
+  } // end function validateForm
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+  <header>
+    <h1>Path of Light Yoga Studio</h1>
+  </header>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="survey.html">Survey</a></li>
+    <li><a href="store.html">Store</a></li> 
+  </nav>
+  <main>
+    <h2>Contact Path of Light Yoga Studio</h2>
+    <p>Required information is marked with an asterisk(*).</p>
+    <form method="post" action="http://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm();">
+    <label for="myName">Name:</label>
+    <input type="text" name="myName" id="myName" placeholder="your first and last name">
+    <label for="myEmail">*E-mail:</label>
+    <input type="email" name="myEmail" id="myEmail" placeholder="name@domain.com">
+    <label for="myComments">Comments:</label>
+    <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+    <button type="submit" id="mySubmit">Send Now</button>
+    </form>
+  </main>
+  <footer>
+    <small><i>Copyright &copy; 2018 Path of Light Yoga Studio<br>
+            harman.dhami@email.kpu.ca</i></small>
+  </footer>
+  </div>
+</body>
+</html>
